@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Clinic Enquiry</title>
 
-  <link
-    rel="stylesheet"
-    href="enquiryForm.css">
+  <link rel="stylesheet" href="enquiryForm.css">
 </head>
 
 <body>
@@ -17,47 +16,35 @@
     <form class="enquiry-form" id='enquiry-form'>
       <div class="form-field">
         <label for="full-name">Full name (required)</label>
-        <input
-          id="full-name"
-          name="full_name"
-          type="text"
-          autocomplete="name"
-          minlength="2"
-          maxlength="200"
-          
-        >
+        <input id="full-name" name="full_name" type="text" autocomplete="name" minlength="2" maxlength="200">
       </div>
 
       <div class="form-field">
         <label for="email">Email (required)</label>
-        <input
-          id="email"
-          name="email"
-          type="email"
-          autocomplete="email"
-          
-        >
+        <input id="email" name="email" type="email" autocomplete="email">
       </div>
 
       <div class="form-field form-field--wide">
         <label for="service">Service (required)</label>
-        <select id="service" name="service" >
+        <select id="service" name="service">
           <option value="">Choose a service</option>
           <option value="online_consultation">Online consultation</option>
           <option value="in_person">In-person appointment</option>
         </select>
       </div>
 
+      <div class="form-field form-field--wide"></div>
+      <label for="priority">Enquiry Priority:</label>
+      <select id="priority">
+        <option value="1">Low</option>
+        <option value="2">Medium</option>
+        <option value="3">High</option>
+      </select>
+      </div>
+
       <div class="form-field form-field--wide">
         <label for="message">Message (required)</label>
-        <textarea
-          id="message"
-          name="message"
-          rows="6"
-          minlength="10"
-          maxlength="1000"
-          
-        ></textarea>
+        <textarea id="message" name="message" rows="6" minlength="10" maxlength="1000"></textarea>
       </div>
 
       <button class="submit-button" type="submit">
@@ -70,4 +57,5 @@
   <div id="result"></div>
   <script src="script.js"></script>
 </body>
+
 </html>
